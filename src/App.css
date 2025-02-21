@@ -39,11 +39,12 @@ h1, h2 {
 }
 
 .home {
-  background-color: #f8f8ff;
-  color: #000; /* Changed to richer black */
-  padding: 80px 40px;
-  text-align: center;
-  flex: 1;
+    background-color: #f8f8ff;
+    color: #000; /* Changed to richer black */
+    padding: 80px 40px;
+    text-align: center;
+    flex: 1;
+    margin-bottom: 0;
 }
 
 .home .intro-text {
@@ -141,7 +142,7 @@ h1, h2 {
   background-color: #f8f8ff;
   color: #000; /* Changed to richer black */
   padding: 100px 40px; /* Increased padding */
-  margin-bottom: 40px; /* Added bottom margin for spacing */
+  margin-bottom: 0; /* Added bottom margin for spacing */
 }
 
 .contact-us h2 {
@@ -171,6 +172,137 @@ h1, h2 {
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
+}
+/* Media Queries */
+@media (max-width: 1200px) {
+  .achievements, .contact-us {
+    padding: 80px 30px; /* Adjust padding for medium screens */
+  }
+
+  .achievements h2, .contact-us h2 {
+    font-size: 28px; /* Adjust font size for medium screens */
+  }
+
+  .contact-us p,
+  .contact-us ul {
+    font-size: 16px; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .achievements, .contact-us {
+    padding: 60px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .achievements h2, .contact-us h2 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .contact-us p,
+  .contact-us ul {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .achievements, .contact-us {
+    padding: 40px 15px; /* Adjust padding for mobile devices */
+  }
+
+  .achievements h2, .contact-us h2 {
+    font-size: 22px; /* Adjust font size for mobile devices */
+  }
+
+  .contact-us p,
+  .contact-us ul {
+    font-size: 14px; /* Adjust font size for mobile devices */
+  }
+}
+
+@media (max-width: 576px) {
+  .achievements, .contact-us {
+    padding: 30px 10px; /* Adjust padding for smaller mobile devices */
+  }
+
+  .achievements h2, .contact-us h2 {
+    font-size: 20px; /* Adjust font size for smaller mobile devices */
+  }
+
+  .contact-us p,
+  .contact-us ul {
+    font-size: 12px; /* Adjust font size for smaller mobile devices */
+  }
+  @media (max-width: 1200px) {
+    .achievements, .contact-us {
+      padding: 80px 30px; /* Adjust padding for medium screens */
+    }
+  
+    .achievements h2, .contact-us h2 {
+      font-size: 28px; /* Adjust font size for medium screens */
+    }
+  
+    .contact-us p,
+    .contact-us ul {
+      font-size: 16px; /* Adjust font size for medium screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .achievements, .contact-us {
+      padding: 60px 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .achievements h2, .contact-us h2 {
+      font-size: 24px; /* Adjust font size for smaller screens */
+    }
+  
+    .contact-us p,
+    .contact-us ul {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  
+    .project-image {
+      height: 180px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .achievements, .contact-us {
+      padding: 40px 15px; /* Adjust padding for mobile devices */
+    }
+  
+    .achievements h2, .contact-us h2 {
+      font-size: 22px; /* Adjust font size for mobile devices */
+    }
+  
+    .contact-us p,
+    .contact-us ul {
+      font-size: 14px; /* Adjust font size for mobile devices */
+    }
+  
+    .project-image {
+      height: 160px; /* Adjust height for mobile devices */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .achievements, .contact-us {
+      padding: 30px 10px; /* Adjust padding for smaller mobile devices */
+    }
+  
+    .achievements h2, .contact-us h2 {
+      font-size: 20px; /* Adjust font size for smaller mobile devices */
+    }
+  
+    .contact-us p,
+    .contact-us ul {
+      font-size: 12px; /* Adjust font size for smaller mobile devices */
+    }
+  
+    .project-image {
+      height: 140px; /* Adjust height for smaller mobile devices */
+    }
+  }
 }
 
 .footer {
