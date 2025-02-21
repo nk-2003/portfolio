@@ -50,13 +50,20 @@ h1, h2 {
   color: #555;
   margin: 0 0 30px;
 }
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center text content */
+}
 
 .profile-image {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   margin-bottom: 30px;
-  border: 5px solid #000; /* Changed to richer black */
+  border: 5px solid #000;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -97,12 +104,14 @@ h1, h2 {
 .achievements {
   background-color: #f8f8ff;
   color: #000; /* Changed to richer black */
-  padding: 60px 40px;
+  padding: 100px 40px; /* Increased padding */
+  margin-bottom: 40px; /* Added bottom margin for spacing */
 }
 
 .achievements h2 {
   color: #000; /* Changed to richer black */
   margin-bottom: 30px;
+  font-size: 32px; /* Increased font size for headers */
 }
 
 .achievements ul {
@@ -115,14 +124,8 @@ h1, h2 {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.achievements .btn-link {
-  text-decoration: none;
-  color: #ffffff; /* Changed to richer black */
-  cursor: pointer;
-}
 
 .contact-page {
   padding: 40px;
@@ -137,19 +140,21 @@ h1, h2 {
 .contact-us {
   background-color: #f8f8ff;
   color: #000; /* Changed to richer black */
-  padding: 40px;
-  text-align: center;
-  flex: 1;
+  padding: 100px 40px; /* Increased padding */
+  margin-bottom: 40px; /* Added bottom margin for spacing */
 }
 
 .contact-us h2 {
   color: #000; /* Changed to richer black */
   margin-bottom: 30px;
+  font-size: 32px; /* Increased font size for headers */
 }
 
-.contact-us p, .contact-us ul {
+.contact-us p,
+.contact-us ul {
   color: #555;
   margin: 0;
+  font-size: 18px; /* Increased font size */
 }
 
 .contact-us ul {
@@ -160,6 +165,14 @@ h1, h2 {
 .contact-us li {
   margin: 20px 0;
 }
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
 .footer {
   padding: 40px;
   text-align: center;
@@ -356,6 +369,86 @@ h1, h2 {
   cursor: pointer;
   color: #fff;
 }
+/* Typing Animation */
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid orange; /* Adjust the color to your preference */
+  white-space: nowrap;
+  letter-spacing: .15em;
+  animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; } /* Adjust the color to match the border color */
+}
+
+/* Fixed Text Style */
+.fixed-text {
+  display: inline-block;
+  margin-right: 10px; /* Space between fixed text and typing animation */
+}
+
+/* Intro Text Container */
+.intro-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+  .project-img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .project-img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-img {
+    height: 120px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .typing-animation {
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+    letter-spacing: 0.1em; /* Adjust spacing for better readability */
+    border-right: 0.1em solid orange; /* Adjust cursor thickness */
+  }
+
+  .fixed-text {
+    font-size: 1.2rem; /* Match font size with typing animation */
+    margin-right: 5px; /* Reduce spacing between text */
+  }
+
+  .intro-text-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements */
+    text-align: center; /* Align text properly */
+  }
+}
+
+
 
 @media (max-width: 600px) {
   .nav-links {
@@ -395,4 +488,5 @@ h1, h2 {
   .footer-links a i {
     font-size: 24px; /* Adjust emoji size */
   }
+  
 }

@@ -9,8 +9,8 @@ const Achievements = () => {
   };
 
   return (
-    <div className="achievements">
-      <h2>My Achievements</h2>
+    <div className="achievements container py-5">
+      <h2 className="text-center mb-4">My Achievements</h2>
       <ol>
         <li>
           <strong>Top Projects:</strong>
@@ -22,7 +22,8 @@ const Achievements = () => {
                   onClick={() => handleClick(1)}
                   className="btn btn-link"
                 >
-                  Retrokicks E-commerce Platform
+                  <img src="images/pro1.png" className="project-image" />
+                  <p className="project-title">Retrokicks E-commerce Platform</p>
                 </a>
               </strong>
               {showDescription === 1 && (
@@ -46,7 +47,8 @@ const Achievements = () => {
                   onClick={() => handleClick(2)}
                   className="btn btn-link"
                 >
-                  RertoBikes E-commerce Platform
+                  <img src="images/pro2.png" className="project-image" />
+                  <p className="project-title">RertoBikes E-commerce Platform</p>
                 </a>
               </strong>
               {showDescription === 2 && (
