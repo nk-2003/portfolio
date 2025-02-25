@@ -9,7 +9,7 @@ import Projects from './Components/Projects';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import './App.css';
-
+import './index.css';
 function App() {
   return (
     <Router>

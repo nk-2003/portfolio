@@ -7,7 +7,7 @@ const Home = () => {
   const typingRef = useRef(null);
 
   useEffect(() => {
-    const text = "I'm NAVEENKUMAR N ..."; // Fixed text
+    const text = "I'm NAVEENKUMAR N"; // Fixed text
     let index = 0;
 
     function type() {
