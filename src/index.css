@@ -254,43 +254,6 @@ h1, h2 {
   box-shadow: var(--shadow-sm);
 }
 
-/* Contact Section */
-.contact-page,
-.contact-us {
-  background-color: var(--secondary-bg);
-  padding: 3rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.contact-us-container {
-  max-width: 600px;
-  width: 100%;
-  flex: 1;
-}
-
-.contact-us h2 {
-  font-size: 2rem;
-}
-
-.contact-us p,
-.contact-us ul {
-  color: var(--secondary-text);
-  font-size: 1.125rem;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.contact-us ul {
-  list-style: none;
-  padding: 0;
-}
-
-.contact-us li {
-  margin: 1rem 0;
-}
 
 /* Footer */
 .footer {
@@ -370,42 +333,78 @@ h1, h2 {
   box-shadow: var(--shadow-sm);
 }
 
-/* Media Queries */
-@media (max-width: 1200px) {
-  .achievements, .contact-us {
-    padding: 2.5rem 1.25rem;
-  }
-
-  .achievements h2, .contact-us h2 {
-    font-size: 1.75rem;
-  }
-
-  .contact-us p, .contact-us ul {
-    font-size: 1rem;
-  }
-
-  .project-image {
-    max-width: 250px;
-  }
-}
-
-@media (max-width: 992px) {
-  .achievements, .contact-us {
-    padding: 2rem 1rem;
-  }
-
-  .achievements h2, .contact-us h2 {
-    font-size: 1.5rem;
-  }
-
-  .contact-us p, .contact-us ul {
-    font-size: 0.875rem;
-  }
 
   .project-image {
     max-width: 200px;
   }
+/* Contact Us Page Container */
+.contact-us-container {
+  padding: 40px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
+
+.contact-us {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-us h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-us p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.contact-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-us li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #444;
+}
+
+.contact-us i {
+  margin-right: 8px;
+  color: #000000; /* LinkedIn blue by default */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .contact-us-container {
+    padding: 20px;
+  }
+
+  .contact-us {
+    padding: 20px;
+  }
+
+  .contact-us h2 {
+    font-size: 24px;
+  }
+
+  .contact-us p,
+  .contact-us li {
+    font-size: 14px;
+  }
+}
+
 
 @media (max-width: 768px) {
   .nav {
