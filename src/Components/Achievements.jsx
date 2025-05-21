@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../App.css';
 
 const Achievements = () => {
-  const [showDescription, setShowDescription] = useState(null);
-
-  const handleClick = (index) => {
-    setShowDescription((prevIndex) => (prevIndex === index ? null : index));
-  };
-
   return (
     <div className="achievements container py-5">
       <h2 className="text-center mb-4">My Achievements</h2>
@@ -15,71 +9,46 @@ const Achievements = () => {
         <li>
           <strong>Top Projects:</strong>
           <ul>
-            <li>
-              <strong>
-                <a
-                  href="#!"
-                  onClick={() => handleClick(1)}
-                  className="btn btn-link"
-                >
-                  <img src="images/pro1.png" className="project-image" />
-                  <p className="project-title">Retrokicks E-commerce Platform</p>
-                </a>
-              </strong>
-              {showDescription === 1 && (
-                <p>
-                  I developed the front end of an e-commerce platform called Retrokicks, which specializes in showcasing a diverse range of boots. By implementing a sleek and intuitive user interface, along with responsive web design techniques, NK-Boots provides an engaging and seamless shopping experience for users. This project highlights my expertise in creating visually appealing and user-friendly web applications, emphasizing my proficiency in front-end development technologies.{' '}
-                  <a
-                    href="https://nk-boots.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-primary"
-                  >
-                    View Project
-                  </a>
+            <li className="project-wrapper">
+              <img src="images/pro1.png" className="project-image" />
+              <div className="project-details">
+                <p className="project-title">Retrokicks E-commerce Platform</p>
+                <p className="project-description">
+                  I developed the front end of an e-commerce platform called Retrokicks, 
+                  specializing in showcasing a diverse range of boots. By implementing a sleek 
+                  and intuitive user interface, along with responsive web design techniques, 
+                  Retrokicks provides an engaging shopping experience for users.
                 </p>
-              )}
-            </li>
-            <li>
-              <strong>
                 <a
-                  href="#!"
-                  onClick={() => handleClick(2)}
-                  className="btn btn-link"
+                  href="https://nk-boots.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
                 >
-                  <img src="images/pro2.png" className="project-image" />
-                  <p className="project-title">RertoBikes E-commerce Platform</p>
+                  View Project
                 </a>
-              </strong>
-              {showDescription === 2 && (
-                <p>
-                  I developed the front end for an e-commerce platform called RertoBikes, which specializes in bike parts. By implementing a sleek and intuitive user interface, along with responsive web design techniques, RertoBikes provides an engaging and seamless shopping experience for bike enthusiasts. This project highlights my expertise in creating visually appealing and user-friendly web applications, emphasizing my proficiency in front-end development technologies. My work on RertoBikes significantly improved user engagement, demonstrating my ability to deliver impactful digital solutions.{' '}
-                  <a
-                    href="https://retrobikes.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-primary"
-                  >
-                    View Project
-                  </a>
-                </p>
-              )}
+              </div>
             </li>
-          </ul>
-        </li>
-        <li>
-          <strong>Certifications:</strong>
-          <ul>
-            <li><strong>React JS</strong></li>
-            <li><strong>SQL</strong></li>
-          </ul>
-        </li>
-        <li>
-          <strong>Skills:</strong>
-          <ul>
-            <li>Proficient in JavaScript, React JS</li>
-            <li>Experienced in responsive web design and development.</li>
-            <li>Strong understanding of RESTful APIs and web services.</li>
+
+            <li className="project-wrapper">
+              <img src="images/pro2.png" className="project-image" />
+              <div className="project-details">
+                <p className="project-title">RetroBikes E-commerce Platform</p>
+                <p className="project-description">
+                  I developed the front end for an e-commerce platform called RetroBikes, 
+                  specializing in bike parts. By implementing a sleek and intuitive user interface, 
+                  RetroBikes provides an engaging shopping experience for bike enthusiasts.
+                </p>
+                <a
+                  href="https://retrobikes.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  View Project
+                </a>
+              </div>
+            </li>
           </ul>
         </li>
       </ol>
@@ -88,3 +57,6 @@ const Achievements = () => {
 };
 
 export default Achievements;
+
+
+

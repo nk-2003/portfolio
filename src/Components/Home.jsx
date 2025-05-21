@@ -48,12 +48,6 @@ const Home = () => {
         <a href="/projects" className="btn btn-outline-primary mx-2">View Projects</a>
         <a href="/contact" className="btn btn-primary mx-2">Contact Me</a>
       </div>
-      <div className='home-achievements'>
-        <Achievements />
-      </div>
-      <div className='home-contactus'>
-        <ContactUs />
-      </div>
     </div>
   );
 };
