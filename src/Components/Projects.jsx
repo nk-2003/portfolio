@@ -39,12 +39,12 @@ const Projects = () => {
                 loading="lazy"
               />
               <div className="project-details">
-                <h5 className="card-title">E-commerce Bikes Store</h5>
+                <h5 className="card-title">Retrofy Ecommerce</h5>
                 <p>
-                  An online store for retro bikes, with a user-friendly interface, product categories, and cart functionality. Developed using React and deployed on Netlify.
+                  An online store for accessaries, with a user-friendly interface, products, and cart functionality. Developed using React and deployed on Vercel.
                 </p>
                 <a
-                  href="https://retrobikes.netlify.app/"
+                  href="https://retrofy-five.vercel.app/"
                   className="btn btn-primary"
                   target="_blank"
                   rel="noopener noreferrer"

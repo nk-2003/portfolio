@@ -35,12 +35,12 @@ const Achievements = () => {
               <div className="project-details">
                 <p className="project-title">RetroBikes E-commerce Platform</p>
                 <p className="project-description">
-                  I developed the front end for an e-commerce platform called RetroBikes, 
-                  specializing in bike parts. By implementing a sleek and intuitive user interface, 
-                  RetroBikes provides an engaging shopping experience for bike enthusiasts.
+                  I developed the python fullstack for an e-commerce platform called Retrofy, 
+                  specializing in clothes & electronics. By implementing a sleek and intuitive user interface, 
+                  Retrofy provides an engaging shopping experience for Customers.
                 </p>
                 <a
-                  href="https://retrobikes.netlify.app/"
+                  href="https://retrofy-five.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary"
